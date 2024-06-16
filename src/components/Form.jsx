@@ -29,7 +29,7 @@ function Form() {
         ...formData,
         timestamp: currentDate // Add timestamp to form data
       };
-      const response = await axios.post('https://privateinboxapp-1.onrender.com/api/saveData', formDataWithTimeStamp);
+      const response = await axios.post('http://localhost:3000/api/saveData', formDataWithTimeStamp);
       console.log(response.data); // Assuming backend responds with saved data
       setSuccessMessage(true); // Show success message
     } catch (error) {

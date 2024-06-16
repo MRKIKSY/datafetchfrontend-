@@ -7,7 +7,7 @@ function DataDisplay() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://privateinboxapp-1.onrender.com/api/getData'); // Adjust the URL as needed
+        const response = await axios.get('http://localhost:3000/api/getData'); // Adjust the URL as needed
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);

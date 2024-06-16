@@ -16,7 +16,7 @@ function DisplayPictures() {
   useEffect(() => {
     const fetchPictures = async () => {
       try {
-        const response = await axios.get('https://privateinboxapp-1.onrender.com/api/getPictures');
+        const response = await axios.get('http://localhost:3000/api/getPictures');
         setSubmittedPictures(response.data);
       } catch (error) {
         console.error('Error fetching submitted pictures:', error);
