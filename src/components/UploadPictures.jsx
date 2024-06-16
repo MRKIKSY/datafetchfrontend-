@@ -37,7 +37,7 @@ function UploadPictures() {
         formDataToSend.append(key, formDataWithTimeStamp[key]);
       }
 
-      const response = await axios.post('http://localhost:3000/api/savePicture', formDataToSend);
+      const response = await axios.post('https://privateinboxapp-1.onrender.com/api/savePicture', formDataToSend);
       console.log(response.data); // Assuming backend responds with saved data
       setSuccessMessage(true); // Show success message
     } catch (error) {
